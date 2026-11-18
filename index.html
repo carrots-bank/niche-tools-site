@@ -1,0 +1,30 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Private</title>
+<style>:root{--paper:#F1F2F6;--surface:#fff;--ink:#1B1F3B;--muted:#5B6080;--line:#D9DCE7;--red:#BE3B33}
+@media (prefers-color-scheme:dark){:root{--paper:#11132A;--surface:#1A1D38;--ink:#ECEDF6;--muted:#A2A6C4;--line:#2D3154;--red:#F2766C}}
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:var(--paper);color:var(--ink);font:16px/1.5 system-ui,sans-serif;padding:16px;box-sizing:border-box}
+form{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px;width:100%;max-width:360px;display:flex;flex-direction:column;gap:12px}
+h1{margin:0;font-size:1.3rem}p{margin:0;color:var(--muted);font-size:.9rem}
+input{font:inherit;padding:10px 12px;border:1.5px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink)}
+button{font:inherit;font-weight:600;padding:10px;border:0;border-radius:8px;background:var(--ink);color:var(--paper);cursor:pointer}
+button:disabled{opacity:.6}#err{color:var(--red)}#err:empty{display:none}</style></head><body>
+<form id="f"><h1>Private page</h1><p>Enter the password you were given.</p>
+<input id="pw" type="password" autocomplete="current-password" aria-label="Password" required autofocus>
+<button id="b">Open</button><p id="err" role="alert"></p></form>
+<script>
+const D={"s":"/qppSKCzOwiX7ZsdmPxQ/w==","i":"Bgb/fKshz6Xv8Tw5","c":"vllVrzCfO+qwyXxLvTdKrlltmtzqWhDp109NnZcuVESvaPTX73m/NURn4DGXmqrLhvnSv2RZB4O6KinAU7zzZM7g623WRp/Vusz62Yfm/dIczB2FZu57xMy8pap5HzZK8SCA57PtWrXnd7zhzeImFmbq+NguadsFkG97hfeYbxiOaYvhQR3ivevtvGtGFraNAwT4Q9yx855RiPnYeGjw3zyS8EvTKhVFYOyxc6EHSjWUp1DXF8Vzn0/HMq28dBFViLwBT5nc5Y/e4izaMXnYwANmBzkE4s0X1jdYKxb+BDFsd+OHg9CMc4Js9fsugDH9y7ubkY9zfNrYpXYb49Bc2VkUttwoOSjfoHUCvKIaZXaZG5dXwDX2LM28V5yRrdhJtHe8Bh1ox6cRKt4WQj2wu0rROCBajRZkburlVGWzDMob0WTOFaP1DyDJKfU6m97WeRiZ7bzelVoRxY7PkuqSEQrvMWzhJPyM7COe4JbyFged66+KMC+n1J0dKLDCSbEvkXiXk0l+wJEUGy0rJmAQYWgDilXQydUQqPNBqPKUYQpwP9f3gumWNIXytD0o11xACRdeYgeginP9f814lLKgCV2c/htcfUwKZ5jdOP0H83etWTvPSE+1bixCAI9wfE3PyDb+smfMhlnl+CHCB/c4JjsdHgMFqzUw1aE7c3tBajKiuvin4MFtZ//+HoDIGn2VBeU57E72dKbkx/W2Jc0Y8Em/B+3vIFPAuWpmmXTxKwBAXg2A220r8CG8NapjFjEpyFzPCqiPMcUaMq2X/J0kJqVUXTpTF5B72/+6PAbm8BcG/cLcS+8sbdQh8SmU35Ma79dFDq5O5tR/AfFzjUWyVgQZGGtbo8zKbplNpoO57Qoo0FP4mhjQb5N07KS/GjrBIGU4ulgipFh9a3J1nHrPtbTOO2XBzFdDodJpldXhqA79IPTIZ1fubOA5AapKD3yCEMxvb2hF26CmKeR8IAM+hCTqDk9/YTEJBI7pup/BInTcLZFiGoAwT5SiO5EiSIheGNR5CP8GBcBcTXKu8PmOozx04h8ewlT+nQoHLOV4OECYkDElIJ2oeycGsSYVs4LdML4Tm72WCcHSiuQHuBHSIXxpbi2+egVjoQvzCG13HpFCLv3vNohn58VYrAm6vfR9vt/2xA8X/AGh7rgeWBgKc8uL4nQTE6//koKcZmIIRVBquuuoc09kh4ZV7hfG2vtX2ePy4aq655eF+iPbSKPQHzYrNTwtnShvjybgLtsEubAdPF029kJHPAzCJBI257Qo7a9zF0RDUsvEVfSHOzsGNxx5sL1JAO3kxS0HMew5Wgcc88JfSUFrN2AylCA5OAyIaNiYpISET/5BBob4HWnRdMYJgbus8MyE1jc87f0U7N60Gs0KIVUVkrU8ihmDlihiKL9+Pk+gLlMigatdceHkoBGhPdGuTp1Cmrzyl/2WRjtIaDC7Pb5p5cjlZR7OmWChsVVsBNXvHW3SAMLDXXhweIb3arPuWkIkf/fSRfyiBa1rrhb+EgIg2I4lv0yV9tAt4nwdxusqo26UCzZyPdCxioz9LlUgzal7MuF2jJ6U8/FdVLvaZjWtTi6asYNJ9rRGUp0+KUNS6fr6Z3DofgFKfISqPjrYP685Wdb9448ifySK1y58UVeMREhpKqLa7HHhEK/lJSOf3bkU70lztLiXUmk8zFXRBUp0PcSmR30+mxEP/1SAdFeRqNlbETSEUAMsauxhs1EOsmcFYNkCW5lajfHbrez1JmhFB9ATcxpaj7L4GRKiROwrxNdaWj62Y9tA4QhAQee8rhvwISvNwOeGPw/poxUrZljUnW8FUIZQ+B8ID+5QcO5eKluExdsW8VXd"},N=600000;
+const u=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
+async function open_(pw){
+  const base=await crypto.subtle.importKey("raw",new TextEncoder().encode(pw),"PBKDF2",false,["deriveKey"]);
+  const key=await crypto.subtle.deriveKey({name:"PBKDF2",salt:u(D.s),iterations:N,hash:"SHA-256"},base,{name:"AES-GCM",length:256},false,["decrypt"]);
+  const html=new TextDecoder().decode(await crypto.subtle.decrypt({name:"AES-GCM",iv:u(D.i)},key,u(D.c)));
+  try{sessionStorage.setItem("nt.pw",pw)}catch(e){}
+  document.open();document.write(html);document.close();
+}
+document.getElementById("f").addEventListener("submit",async e=>{
+  e.preventDefault();const b=document.getElementById("b");b.disabled=true;b.textContent="Opening…";
+  try{await open_(document.getElementById("pw").value)}
+  catch(x){document.getElementById("err").textContent="Wrong password. Try again.";b.disabled=false;b.textContent="Open"}
+});
+let saved=null;try{saved=sessionStorage.getItem("nt.pw")}catch(e){}
+if(saved)open_(saved).catch(()=>{try{sessionStorage.removeItem("nt.pw")}catch(e){}});
+</script></body></html>
